@@ -4,11 +4,13 @@ class Tombol extends StatelessWidget {
   final String? nama;
   final Function()? press;
   final Color? warna;
+  final double? height;
   const Tombol(
       {Key? key,
       this.nama,
       required this.press,
-      this.warna = const Color(0xff686b28)})
+      this.warna = const Color(0xff686b28),
+      this.height})
       : super(key: key);
 
   @override
@@ -18,7 +20,7 @@ class Tombol extends StatelessWidget {
       child: Container(
           alignment: Alignment.center,
           margin: const EdgeInsets.symmetric(vertical: 8.0),
-          height: 70.0,
+          height: (height == null) ? 70.0 : height,
           decoration: BoxDecoration(
               color: warna,
               border: Border.all(color: Colors.grey),
