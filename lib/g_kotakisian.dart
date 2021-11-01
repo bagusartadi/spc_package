@@ -3,6 +3,7 @@ import 'package:spc_package/a_warna_bal.dart';
 
 class KotakIsian extends StatelessWidget {
   final double? height;
+  final double? width;
   final TextEditingController? controller;
   final TextInputType? textInputType;
   final bool isAcak;
@@ -11,6 +12,7 @@ class KotakIsian extends StatelessWidget {
   const KotakIsian(
       {Key? key,
       this.height,
+      this.width,
       this.controller,
       this.textInputType,
       this.isAcak = false,
@@ -23,6 +25,7 @@ class KotakIsian extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(8.0),
       height: (height == null) ? 70.0 : height,
+      width: (width == null) ? double.infinity : width,
       decoration: BoxDecoration(
           color: WarnaBAL.warnaDasar,
           border: Border.all(color: Colors.grey),

@@ -33,6 +33,7 @@ class Tombol extends StatelessWidget {
               ]),
           child: Text(
             nama!,
+            textAlign: TextAlign.center,
             style: const TextStyle(
                 fontSize: 30.0,
                 color: Colors.white,
