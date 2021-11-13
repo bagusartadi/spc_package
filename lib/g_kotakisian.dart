@@ -23,7 +23,7 @@ class KotakIsian extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(8.0),
+      margin: const EdgeInsets.symmetric(vertical: 4.0),
       height: (height == null) ? 70.0 : height,
       width: (width == null) ? double.infinity : width,
       decoration: BoxDecoration(
@@ -45,6 +45,7 @@ class KotakIsian extends StatelessWidget {
               contentPadding: EdgeInsets.zero,
               border: InputBorder.none,
               hintText: hint,
+              hintStyle: const TextStyle(fontSize: 25, color: Colors.white60),
               labelText: label,
               labelStyle: const TextStyle(fontSize: 20, color: Colors.white)),
         ),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Tombol extends StatelessWidget {
   final String? nama;
   final Function()? press;
-  final Color? warna;
+  final Color warna;
   final double? height;
   const Tombol(
       {Key? key,
@@ -20,7 +20,7 @@ class Tombol extends StatelessWidget {
       child: Container(
           alignment: Alignment.center,
           margin: const EdgeInsets.symmetric(vertical: 8.0),
-          height: (height == null) ? 70.0 : height,
+          height: height ?? 70.0,
           decoration: BoxDecoration(
               color: warna,
               border: Border.all(color: Colors.grey),
