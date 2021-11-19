@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class Tombol extends StatelessWidget {
-  final String? nama;
+  final String nama;
   final Function()? press;
   final Color warna;
   final double? height;
   const Tombol(
       {Key? key,
-      this.nama,
+      this.nama = 'Tombol',
       required this.press,
       this.warna = const Color(0xff686b28),
       this.height})
@@ -32,7 +32,7 @@ class Tombol extends StatelessWidget {
                     offset: Offset(0, 1))
               ]),
           child: Text(
-            nama!,
+            nama,
             textAlign: TextAlign.center,
             style: const TextStyle(
                 fontSize: 30.0,

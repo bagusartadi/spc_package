@@ -25,7 +25,8 @@ class KotakIsian extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 4.0),
       height: (height == null) ? 70.0 : height,
-      width: (width == null) ? double.infinity : width,
+      width: width ?? double.infinity,
+      /* bise ditulis seperti diatas*/
       decoration: BoxDecoration(
           color: WarnaBAL.warnaDasar,
           border: Border.all(color: Colors.grey),
